@@ -1,0 +1,18 @@
+﻿@model IEnumerable<KeyValuePair<string, int>>
+@{
+    ViewBag.Title = "Singleton";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">Dependency Injection Test</h4>
+    </div>
+    <div class="panel-body">
+        <div class="list-group">
+            @foreach (KeyValuePair<string, int> item in Model)
+            {
+                <div class="list-group-item">@item.Key ------------ @item.Value</div>
+            }
+        </div>
+    </div>
+</div>

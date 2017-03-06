@@ -1,0 +1,40 @@
+﻿@model string
+@{
+    ViewBag.Title = "Exercise";
+
+    List<SelectListItem> list = new List<SelectListItem>();
+    foreach (string item in ViewBag.Animals)
+    {
+        list.Add(new SelectListItem()
+        {
+            Selected = false,
+            Text = item,
+            Value = item
+        });
+    }
+
+    list.Insert(0, new SelectListItem() { Text = "Please Select", Value = "" });
+
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">Dependency Injection Demo</h4>
+    </div>
+    <div class="panel-body">
+        <div class="col-sm-offset-1 col-sm-2">
+            @using (Html.BeginForm("DependencyInjectionDemo", "Home", FormMethod.Get, new { id = "form1" }))
+            {
+                @Html.DropDownList("name", list, new { @class = "form-control", id = "animalName", onchange = "form1.submit();" })
+            }
+            @if (!string.IsNullOrWhiteSpace(Model))
+            {
+                <div class="alert alert-success" role="alert" style="margin-top:5px">@Model</div>
+            }
+        </div>
+        <div class="col-sm-9 text-right" onclick="document.getElementById('myimg').style.visibility='visible';" 
+            ondblclick="document.getElementById('myimg').style.visibility='hidden';">
+            <img src="~/Images/Capture.PNG" alt="" style="visibility:hidden" width="800" height="400" id="myimg"/>
+        </div>
+    </div>
+</div>

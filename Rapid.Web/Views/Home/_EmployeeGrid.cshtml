@@ -1,0 +1,29 @@
+﻿@model IEnumerable<EmployeeViewModel>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (EmployeeViewModel item in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(item.EmployeeId.ToString(), "Update", new { id = item.EmployeeId })</td>
+                <td>@(string.Join(", ", item.LastName, item.FirstName))</td>
+                <td>@item.Birthday</td>
+                <td>@Html.ActionLink("Delete", "Delete", new { id = item.EmployeeId }, new { @class = "btn btn-primary" })</td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td>@Html.ActionLink("Add", "Update", null, new { @class = "btn btn-primary" })</td>
+        </tr>
+    </tfoot>
+</table>

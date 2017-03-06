@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC </title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("styles", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @{
+        var action = ViewContext.RouteData.GetRequiredString("action");
+    }
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                @*<div class="navbar-brand">
+                    <img class="logo" alt="logo" src="#">
+                </div>*@
+                <div class="navbar-brand">
+                    @Html.ActionLink("Accenture", "Index", "Home")
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li @(action == "Index" ? "class=active" : string.Empty)>@Html.ActionLink("Home", "Index")</li>
+                    <li @(action == "DependencyInjectionTest" ? "class=active" : string.Empty)>@Html.ActionLink("Dependency Injection Test", "DependencyInjectionTest")</li>
+                    <li @(action == "DependencyInjectionDemo" ? "class=active" : string.Empty)>@Html.ActionLink("Dependency Injection Demo", "DependencyInjectionDemo")</li>
+                    <li @(action == "WebApiDemo" ? "class=active" : string.Empty)>@Html.ActionLink("Web Api Demo", "WebApiDemo")</li>
+                    <li @(action == "ThrowError" ? "class=active" : string.Empty)>@Html.ActionLink("Throw Error Demo", "ThrowError")</li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-text">Your Name</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid body-content">
+        <br />
+        @RenderBody()
+
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center small">&copy; @DateTime.Now.Year- My ASP.NET MVC Application</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

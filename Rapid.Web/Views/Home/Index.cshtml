@@ -1,0 +1,15 @@
+﻿@model IEnumerable<EmployeeViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">Employee List</h4>
+    </div>
+    <div class="panel-body">
+        <div id="GridContainer">
+            @Html.Partial("_EmployeeGrid", Model)
+        </div>
+    </div>
+</div>

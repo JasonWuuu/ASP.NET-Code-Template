@@ -1,0 +1,26 @@
+﻿@model EmployeeViewModel
+@{
+    ViewBag.Title = Model.EmployeeId == 0 ? "Add" : "Update";
+}
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="panel-title">@ViewBag.Title Employee</h4>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-5">
+                @using (Html.BeginForm("Update"))
+                {
+                    @Html.EditorForModel(Model)
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-8">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

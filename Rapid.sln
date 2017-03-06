@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid.Web", "Rapid.Web\Rapid.Web.csproj", "{A03E0BD4-929F-45C5-BAA4-AD6D2FCE919D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid.Service", "Rapid.Service\Rapid.Service.csproj", "{81E25E72-5615-49C5-9185-6987289635C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid.Data", "Rapid.Data\Rapid.Data.csproj", "{634B8661-1682-488E-BBA6-5BB5AB5686FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid.Model", "Rapid.Model\Rapid.Model.csproj", "{EC250322-A00F-4457-9E85-E38E476BBBC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid.Core", "Rapid.Core\Rapid.Core.csproj", "{8F613185-C35A-4897-A67C-4B562BF6EF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rapid.Service.Tests", "Rapid.Service.Tests\Rapid.Service.Tests.csproj", "{41A72C4A-434E-403A-874E-188B11CD0BEA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs2013.accenture.com/tfs/tfs2013tpc03
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Rapid.Web\\Rapid.Web.csproj
+		SccProjectName1 = Rapid.Web
+		SccLocalPath1 = Rapid.Web
+		SccProjectUniqueName2 = Rapid.Service\\Rapid.Service.csproj
+		SccProjectName2 = Rapid.Service
+		SccLocalPath2 = Rapid.Service
+		SccProjectUniqueName3 = Rapid.Data\\Rapid.Data.csproj
+		SccProjectName3 = Rapid.Data
+		SccLocalPath3 = Rapid.Data
+		SccProjectUniqueName4 = Rapid.Model\\Rapid.Model.csproj
+		SccProjectName4 = Rapid.Model
+		SccLocalPath4 = Rapid.Model
+		SccProjectUniqueName5 = Rapid.Core\\Rapid.Core.csproj
+		SccProjectName5 = Rapid.Core
+		SccLocalPath5 = Rapid.Core
+		SccProjectUniqueName6 = Rapid.Service.Tests\\Rapid.Service.Tests.csproj
+		SccProjectName6 = Rapid.Service.Tests
+		SccLocalPath6 = Rapid.Service.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A03E0BD4-929F-45C5-BAA4-AD6D2FCE919D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A03E0BD4-929F-45C5-BAA4-AD6D2FCE919D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A03E0BD4-929F-45C5-BAA4-AD6D2FCE919D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A03E0BD4-929F-45C5-BAA4-AD6D2FCE919D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E25E72-5615-49C5-9185-6987289635C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E25E72-5615-49C5-9185-6987289635C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E25E72-5615-49C5-9185-6987289635C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E25E72-5615-49C5-9185-6987289635C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{634B8661-1682-488E-BBA6-5BB5AB5686FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634B8661-1682-488E-BBA6-5BB5AB5686FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634B8661-1682-488E-BBA6-5BB5AB5686FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634B8661-1682-488E-BBA6-5BB5AB5686FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC250322-A00F-4457-9E85-E38E476BBBC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC250322-A00F-4457-9E85-E38E476BBBC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC250322-A00F-4457-9E85-E38E476BBBC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC250322-A00F-4457-9E85-E38E476BBBC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F613185-C35A-4897-A67C-4B562BF6EF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F613185-C35A-4897-A67C-4B562BF6EF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F613185-C35A-4897-A67C-4B562BF6EF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F613185-C35A-4897-A67C-4B562BF6EF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A72C4A-434E-403A-874E-188B11CD0BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A72C4A-434E-403A-874E-188B11CD0BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A72C4A-434E-403A-874E-188B11CD0BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A72C4A-434E-403A-874E-188B11CD0BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Logging.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
